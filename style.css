@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+header {
+    padding: 12px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.input-container > form > input {
+    padding: 5px;
+}
+
+.input-container > form > button {
+    padding: 5px;
+    
+}
+
+.autocomplete-items {
+    position: absolute;
+    background-color: white;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.autocomplete-items > div {
+    padding: 3px;
+    border-bottom: 1px solid black;
+}
+
+.guess-container {
+    padding-top: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.guess-table {
+    width: 80%;
+}
+
+.guess-table td {
+    padding: 8px;
+}
+
+.cell-red {
+    background-color: rgb(168, 7, 7);
+    color: white;
+}
+
+.cell-green {
+    background-color: rgb(0, 119, 0);
+    color: white;
+}
+
+.cell-yellow {
+    background-color: rgb(184, 150, 0);
+    color: white;
+}
+
+.cell-blue {
+    background-color: rgb(0, 0, 141);
+    color: white;
+}
+
+.cell-later {
+    position: relative;
+    background-color: rgb(168, 7, 7);
+    color: white;
+}
+
+.cell-before {
+    position: relative;
+    background-color: rgb(168, 7, 7);
+    color: white;
+}
+
+.cell-later::before {
+    position: absolute;
+    content: "+";
+    top: 0;
+    right: 0;
+}
+
+.cell-before::before {
+    position: absolute;
+    content: "-";
+    top: 0;
+    right: 0;
+}
